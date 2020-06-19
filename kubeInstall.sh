@@ -1,7 +1,7 @@
 set -x
 
 # Remove Kubernetes
-clush -a yum -y remove kube*
+clush -a 'yum -y remove kube*'
 
 #Install Kubernetes
 cat <<EOF > /etc/yum.repos.d/kubernetes.repo
